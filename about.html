@@ -85,7 +85,7 @@
       class="container flex max-w-[1024px] items-center justify-between px-[171px] pt-[32px] pb-[8px]"
     >
       <!-- Logo -->
-      <a href="index.html" class="pointer flex items-center gap-[8px]">
+      <a href="index.html" class="flex cursor-pointer items-center gap-[8px]">
         <img
           src="images/header/white-logo.png"
           alt="Logo"
@@ -102,7 +102,7 @@
           class="text-gray flex items-center gap-[32px] text-[16px] leading-normal font-[400] not-italic"
         >
           <li>
-            <a href="index.html" class="hover:text-white"
+            <a href="index.html" class="active-link"
               ><span class="text-primary">#</span>home</a
             >
           </li>
@@ -112,7 +112,7 @@
             >
           </li>
           <li>
-            <a href="about.html" class="active-link"
+            <a href="about.html" class="hover:text-white"
               ><span class="text-primary">#</span>about-me</a
             >
           </li>
@@ -124,14 +124,14 @@
         </ul>
 
         <!-- Hire Me Button -->
-        <button
-          class="pointer border-[1px] border-[#C778DD] px-[16px] py-[8px] hover:bg-[#C778DD]/20"
-        >
-          <a href="#" class="text-[16px] font-[500] text-white"> hire me </a>
-        </button>
+        <!-- <button
+        class="pointer border-[1px] border-[#C778DD] px-[16px] py-[8px] hover:bg-[#C778DD]/20"
+      >
+        <a href="#" class="text-[16px] font-[500] text-white"> hire me </a>
+      </button> -->
       </div>
     </header>
-
+    
     <div class="container min-h-auto max-w-[1024px] px-[171px]">
       <!-- about me -->
       <section>
@@ -147,11 +147,12 @@
         </div>
 
         <!-- About Text and Image -->
-        <div class="flex items-center justify-center gap-[48px] py-[112px]">
-          <!-- Left Content -->
+        <div
+          class="flex items-center justify-between gap-[48px] pt-[48px] pb-[112px]"
+        >
           <!-- About Text -->
           <div
-            class="text-gray flex w-[515px] items-center justify-center text-[16px] leading-normal font-[400] not-italic"
+            class="text-gray flex items-center justify-center text-[16px] leading-normal font-[400] not-italic"
           >
             Hello, I’m Ibrahim Zadran!
             <br /><br />
@@ -168,11 +169,10 @@
 
           <!-- Right Image -->
           <div class="relative">
-            <!-- Hero image with medium z-index -->
             <img
-              src="images/hero/hero1.png"
+              src="images/about/ibrahim.png"
               alt="hero"
-              class="h-[386px] w-[457px] flex-shrink-0"
+              class="relative h-[507px] w-auto flex-shrink-0"
             />
 
             <!-- Logo underneath the hero image -->
@@ -229,9 +229,9 @@
 
           <div>
             <!-- Tech cards -->
-            <div class="mb-[112px] flex flex-row gap-[16px]">
+            <div class="mb-[112px] flex flex-row items-stretch gap-[16px]">
               <!-- Languages card -->
-              <div class="border border-[#ABB2BF]">
+              <div class="flex flex-col border border-[#ABB2BF]">
                 <div class="border-b border-[#ABB2BF] p-[8px]">
                   <h5
                     class="text-[16px] leading-normal font-[600] text-white not-italic"
@@ -242,64 +242,54 @@
                 <div
                   class="text-gray p-[8px] text-[16px] leading-normal font-[400] not-italic"
                 >
-                  <ul class="flex items-center gap-[8px] pb-[8px]">
-                    <li>TypeScript</li>
-                    <li>Lua</li>
-                  </ul>
-                  <ul class="flex items-center gap-[8px]">
-                    <li>Python</li>
+                  <ul>
                     <li>JavaScript</li>
                   </ul>
                 </div>
               </div>
 
-              <div class="border border-[#ABB2BF]">
+              <!-- Other card -->
+              <div class="flex flex-col border border-[#ABB2BF]">
                 <div class="border-b border-[#ABB2BF] p-[8px]">
                   <h5
                     class="text-[16px] leading-normal font-[600] text-white not-italic"
                   >
-                    Languages
+                    Other
                   </h5>
                 </div>
                 <div
-                  class="text-gray p-[8px] text-[16px] leading-normal font-[400] not-italic"
+                  class="text-gray flex-grow p-[8px] text-[16px] leading-normal font-[400] not-italic"
                 >
-                  <ul class="flex items-center gap-[8px] pb-[8px]">
-                    <li>TypeScript</li>
-                    <li>Lua</li>
-                  </ul>
                   <ul class="flex items-center gap-[8px]">
-                    <li>Python</li>
-                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SCSS</li>
                   </ul>
                 </div>
               </div>
 
-              <!-- Development Tools card -->
-              <div class="border border-[#ABB2BF]">
+              <!-- Frameworks card -->
+              <div class="flex flex-col border border-[#ABB2BF]">
                 <div class="border-b border-[#ABB2BF] p-[8px]">
                   <h5
                     class="text-[16px] leading-normal font-[600] text-white not-italic"
                   >
-                    Languages
+                    Frameworks
                   </h5>
                 </div>
                 <div
-                  class="text-gray p-[8px] text-[16px] leading-normal font-[400] not-italic"
+                  class="text-gray flex-grow p-[8px] text-[16px] leading-normal font-[400] not-italic"
                 >
-                  <ul class="flex items-center gap-[8px] pb-[8px]">
-                    <li>TypeScript</li>
-                    <li>Lua</li>
-                  </ul>
                   <ul class="flex items-center gap-[8px]">
-                    <li>Python</li>
-                    <li>JavaScript</li>
+                    <li>Vue</li>
+                    <li>Tailwind</li>
+                    <li>Bootstrap</li>
                   </ul>
                 </div>
               </div>
 
-              <!-- Web Technologies card -->
-              <div class="border border-[#ABB2BF]">
+              <!-- Tools card -->
+              <div class="flex flex-col border border-[#ABB2BF]">
                 <div class="border-b border-[#ABB2BF] p-[8px]">
                   <h5
                     class="text-[16px] leading-normal font-[600] text-white not-italic"
@@ -308,7 +298,7 @@
                   </h5>
                 </div>
                 <div
-                  class="text-gray p-[8px] text-[16px] leading-normal font-[400] not-italic"
+                  class="text-gray flex-grow p-[8px] text-[16px] leading-normal font-[400] not-italic"
                 >
                   <ul class="flex items-center gap-[8px] pb-[8px]">
                     <li>VSCode</li>
@@ -317,29 +307,6 @@
                   <ul class="flex items-center gap-[8px]">
                     <li>Figma</li>
                     <li>Font Awesome</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Frameworks card -->
-              <div class="border border-[#ABB2BF]">
-                <div class="border-b border-[#ABB2BF] p-[8px]">
-                  <h5
-                    class="text-[16px] leading-normal font-[600] text-white not-italic"
-                  >
-                    Languages
-                  </h5>
-                </div>
-                <div
-                  class="text-gray p-[8px] text-[16px] leading-normal font-[400] not-italic"
-                >
-                  <ul class="flex items-center gap-[8px] pb-[8px]">
-                    <li>TypeScript</li>
-                    <li>Lua</li>
-                  </ul>
-                  <ul class="flex items-center gap-[8px]">
-                    <li>Python</li>
-                    <li>JavaScript</li>
                   </ul>
                 </div>
               </div>
