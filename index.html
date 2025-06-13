@@ -124,20 +124,20 @@
         </ul>
 
         <!-- Hire Me Button -->
-        <button
+        <!-- <button
           class="pointer border-[1px] border-[#C778DD] px-[16px] py-[8px] hover:bg-[#C778DD]/20"
         >
           <a href="#" class="text-[16px] font-[500] text-white"> hire me </a>
-        </button>
+        </button> -->
       </div>
     </header>
 
     <div class="container max-w-[1024px] px-[171px]">
       <!-- Hero Section -->
-      <section class="hero container flex pt-[62px] pb-[112px]">
+      <section class="hero container flex justify-between pt-[62px] pb-[112px]">
         <!-- Hero Content -->
         <div
-          class="hero-content flex min-h-[423px] max-w-[1024px] flex-col gap-[30px]"
+          class="hero-content flex min-h-[423px] max-w-[1024px] flex-col justify-center gap-[30px]"
         >
           <!-- Hero Title -->
           <h1
@@ -175,19 +175,19 @@
             <img
               src="images/hero/hero1.png"
               alt="hero"
-              class="relative z-10 h-[386px] w-[457px] flex-shrink-0"
+              class="relative z-10 h-auto w-auto flex-shrink-0"
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="457"
+              width="473"
               height="1"
-              viewBox="0 0 457 1"
+              viewBox="0 0 473 1"
               fill="none"
             >
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M457 1H0V0H457V1Z"
+                d="M473 1H0V0H473V1Z"
                 fill="#C778DD"
               />
             </svg>
@@ -394,9 +394,7 @@
       </section>
 
       <!-- Skills -->
-      <section
-        class="container min-h-[365px] max-w-[1024px] pt-[106px] pb-[112px]"
-      >
+      <section class="container min-h-[365px] max-w-[1024px] pt-[106px]">
         <!-- Header Section -->
         <div class="mb-[12px] flex w-[317px] items-center gap-[16px]">
           <h2
@@ -468,13 +466,8 @@
               <div
                 class="text-gray p-[8px] text-[16px] leading-normal font-[400] not-italic"
               >
-                <ul class="flex items-center gap-[8px] pb-[8px]">
+                <ul>
                   <li>TypeScript</li>
-                  <li>Lua</li>
-                </ul>
-                <ul class="flex items-center gap-[8px]">
-                  <li>Python</li>
-                  <li>JavaScript</li>
                 </ul>
               </div>
             </div>
@@ -486,19 +479,16 @@
                   <h5
                     class="text-[16px] leading-normal font-[600] text-white not-italic"
                   >
-                    Languages
+                    Other
                   </h5>
                 </div>
                 <div
                   class="text-gray p-[8px] text-[16px] leading-normal font-[400] not-italic"
                 >
-                  <ul class="flex items-center gap-[8px] pb-[8px]">
-                    <li>TypeScript</li>
-                    <li>Lua</li>
-                  </ul>
-                  <ul class="flex items-center gap-[8px]">
-                    <li>Python</li>
-                    <li>JavaScript</li>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SCSS</li>
                   </ul>
                 </div>
               </div>
@@ -509,25 +499,22 @@
                   <h5
                     class="text-[16px] leading-normal font-[600] text-white not-italic"
                   >
-                    Languages
+                    Frameworks
                   </h5>
                 </div>
                 <div
                   class="text-gray p-[8px] text-[16px] leading-normal font-[400] not-italic"
                 >
-                  <ul class="flex items-center gap-[8px] pb-[8px]">
-                    <li>TypeScript</li>
-                    <li>Lua</li>
-                  </ul>
-                  <ul class="flex items-center gap-[8px]">
-                    <li>Python</li>
-                    <li>JavaScript</li>
+                  <ul>
+                    <li>Vue</li>
+                    <li>Tailwind</li>
+                    <li>Bootstrap</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <div class="flex flex-col items-center gap-[16px]">
+            <div class="grid grid-rows-3 items-center gap-[16px]">
               <!-- Web Technologies card -->
               <div class="border border-[#ABB2BF]">
                 <div class="border-b border-[#ABB2BF] p-[8px]">
@@ -579,10 +566,10 @@
       </section>
 
       <!-- About Section -->
-      <section class="container min-h-[507px] max-w-[1024px] pb-[112px]">
+      <section class="container min-h-[507px] max-w-[1024px] py-[112px]">
         <div class="relative gap-[170px]">
           <!-- Header -->
-          <div class="mb-[23px] flex items-center gap-[16px]">
+          <div class="mb-[48px] flex items-center gap-[16px]">
             <h2
               class="text-[32px] leading-normal font-[500] text-white not-italic"
             >
@@ -610,10 +597,10 @@
           </div>
 
           <!-- Left Content -->
-          <div class="">
+          <div class="flex flex-row items-center justify-between">
             <!-- About Text -->
             <div
-              class="text-gray mb-[27px] w-[515px] text-[16px] leading-normal font-[400] not-italic"
+              class="text-gray w-[515px] text-[16px] leading-normal font-[400] not-italic"
             >
               <p>
                 Hello, I’m Ibrahim Zadran!
@@ -631,68 +618,63 @@
                 and stay up-to-date with the fast-paced world of web
                 development.
               </p>
-            </div>
 
-            <!-- Contact Button -->
-            <div class="">
+              <!-- Contact Button -->
               <button
-                class="cursor-pointer border-[1px] border-[#C778DD] px-[16px] py-[8px] text-[16px] leading-normal font-[500] text-white not-italic hover:bg-[#C778DD]/20"
+                class="mt-[27px] cursor-pointer border-[1px] border-[#C778DD] px-[16px] py-[8px] text-[16px] leading-normal font-[500] text-white not-italic hover:bg-[#C778DD]/20"
               >
                 <a href="about.html">Read more -></a>
               </button>
             </div>
-          </div>
 
-          <!-- Right Image -->
-          <div class="absolute top-[0px] right-0 z-20">
-            <!-- Hero image with medium z-index -->
-            <img
-              src="images/about/image.png"
-              alt="hero"
-              class="relative h-[507px] w-[339px] flex-shrink-0"
-            />
-
-            <!-- Logo underneath the hero image -->
-            <div class="absolute top-[59px] -left-[4px]">
+            <!-- Right Image -->
+            <div class="relative">
               <img
-                src="images/about/frame1.png"
-                alt="logo"
-                class="h-[84px] w-[84px] flex-shrink-0"
+                src="images/about/ibrahim.png"
+                alt="hero"
+                class="relative h-[507px] w-auto flex-shrink-0"
               />
-            </div>
 
-            <!-- Dots on top of the hero image -->
-            <div class="absolute right-[16px] bottom-[172px]">
-              <img
-                src="images/about/frame2.png"
-                alt="dots"
-                class="h-[56px] w-[104px] flex-shrink-0"
-              />
-            </div>
-            <div class="flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="271"
-                height="1"
-                viewBox="0 0 271 1"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M271 1H0V0H271V1Z"
-                  fill="#C778DD"
+              <!-- Logo underneath the hero image -->
+              <div class="absolute top-[59px] -left-[4px]">
+                <img
+                  src="images/about/frame1.png"
+                  alt="logo"
+                  class="h-[84px] w-[84px] flex-shrink-0"
                 />
-              </svg>
+              </div>
+
+              <!-- Dots on top of the hero image -->
+              <div class="absolute right-[16px] bottom-[172px]">
+                <img
+                  src="images/about/frame2.png"
+                  alt="dots"
+                  class="h-[56px] w-[104px] flex-shrink-0"
+                />
+              </div>
+              <div class="flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="400"
+                  height="1"
+                  viewBox="0 0 400 1"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M400 1H0V0H400V1Z"
+                    fill="#C778DD"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section
-        class="container min-h-[228px] max-w-[1024px] pt-[112px] pb-[145px]"
-      >
+      <section class="container min-h-[228px] max-w-[1024px] pb-[145px]">
         <!-- Header Section -->
         <div class="mb-[45px] flex w-[317px] items-center gap-[16px]">
           <h2
