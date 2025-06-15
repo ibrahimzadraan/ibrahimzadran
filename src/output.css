@@ -314,9 +314,6 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .h-\[1px\] {
     height: 1px;
   }
@@ -437,23 +434,14 @@
   .max-w-\[1024px\] {
     max-width: 1024px;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .flex-shrink-0 {
     flex-shrink: 0;
   }
   .flex-grow {
     flex-grow: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -469,9 +457,6 @@
   }
   .flex-row {
     flex-direction: row;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -490,9 +475,6 @@
   }
   .justify-end {
     justify-content: flex-end;
-  }
-  .justify-items-end {
-    justify-items: end;
   }
   .gap-\[5px\] {
     gap: 5px;
@@ -587,9 +569,6 @@
   .py-\[32px\] {
     padding-block: 32px;
   }
-  .py-\[112px\] {
-    padding-block: 112px;
-  }
   .pt-\[32px\] {
     padding-top: 32px;
   }
@@ -608,14 +587,8 @@
   .pt-\[106px\] {
     padding-top: 106px;
   }
-  .pt-\[141px\] {
-    padding-top: 141px;
-  }
   .pt-\[150px\] {
     padding-top: 150px;
-  }
-  .pt-\[200px\] {
-    padding-top: 200px;
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
@@ -632,18 +605,11 @@
   .text-center {
     text-align: center;
   }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
   .text-\[16px\] {
     font-size: 16px;
   }
   .text-\[24px\] {
     font-size: 24px;
-  }
-  .text-\[30px\] {
-    font-size: 30px;
   }
   .text-\[32px\] {
     font-size: 32px;
@@ -683,10 +649,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -742,18 +704,12 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
